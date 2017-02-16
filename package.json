@@ -1,0 +1,81 @@
+{
+    "name": "fitness-react",
+    "version": "1.0.0",
+    "description": "This is a react for fitness ppl",
+    "main": "index.js",
+    "scripts": {
+        "dev-rel": "node ./build/dev-release.js"
+    },
+    "dependencies": {
+        "antd-mobile": "^0.9.8",
+        "jquery": "^3.1.0",
+        "lodash": "^4.15.0",
+        "moment": "^2.15.1",
+        "radium": "^0.18.1",
+        "rc-animate": "^2.3.1",
+        "rc-form": "^1.0.0",
+        "rc-queue-anim": "^0.12.5",
+        "react": "^15.3.1",
+        "react-addons-css-transition-group": "^15.3.2",
+        "react-dom": "^15.3.1",
+        "react-motion": "^0.4.4",
+        "react-redux": "^4.4.5",
+        "react-router": "^2.8.1",
+        "redux": "^3.5.2",
+        "redux-thunk": "^2.1.0"
+    },
+    "devDependencies": {
+        "autoprefixer-loader": "^3.2.0",
+        "babel-core": "^6.14.0",
+        "babel-loader": "^6.2.5",
+        "babel-plugin-import": "^1.0.1",
+        "babel-plugin-react-transform": "^2.0.2",
+        "babel-plugin-transform-class-properties": "^6.11.5",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-preset-es2015": "^6.14.0",
+        "babel-preset-react": "^6.11.1",
+        "babel-preset-stage-0": "^6.5.0",
+        "babel-preset-stage-1": "^6.13.0",
+        "browser-sync": "^2.15.0",
+        "css-loader": "^0.24.0",
+        "ejs": "^2.5.1",
+        "express": "^4.14.0",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-rev": "^7.1.2",
+        "gulp-rev-collector": "^1.0.5",
+        "gulp-sequence": "^0.4.6",
+        "gulp-uglify": "^2.0.0",
+        "gulp-webpack": "^1.5.0",
+        "html-webpack-plugin": "^2.22.0",
+        "less": "^2.7.1",
+        "less-loader": "^2.2.3",
+        "npmlog": "^4.0.0",
+        "postcss-loader": "^1.0.0",
+        "react-transform-catch-errors": "^1.0.2",
+        "redbox-react": "^1.3.0",
+        "require-dir": "^0.3.0",
+        "rimraf": "^2.5.4",
+        "style-loader": "^0.13.1",
+        "underscore-template-loader": "^0.7.3",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.13.2",
+        "webpack-dev-middleware": "^1.8.1",
+        "webpack-hot-middleware": "^2.12.2"
+    }
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ChrisFuck/fitness-react.git"
+    },
+    "keywords": [
+        "react",
+        "fitness"
+    ],
+    "author": "Chris",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ChrisFuck/fitness-react/issues"
+    },
+    "homepage": "https://github.com/ChrisFuck/fitness-react#readme"
+}
