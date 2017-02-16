@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        (function(){
+            var UA=navigator.userAgent.toLowerCase(),
+                    isAndroid=/android|adr/gi.test(UA),
+                    isIOS=/iphone|ipod|ipad/gi.test(UA);
+            var ratio=1;
+            if(isIOS){
+                ratio=2;
+            }
+            else{
+                var w=Math.min(window.screen.width,window.innerWidth);
+                if(w<420||window.devicePixelRatio>1){
+                    ratio=2;
+                }
+            }
+            window._temp={ratio:ratio};
+            var scale=1/ratio;
+            document.write('<meta name="viewport" content="initial-scale='+scale+', maximum-scale='+scale+', minimum-scale='+scale+', width=device-width, user-scalable=no"/>');
+            document.documentElement.style.fontSize=50*ratio+'px';
+        })();
+    </script>
+    <style>
+        *{padding:0;margin:0;}
+        html,body,#app{width:100%;height:100%;overflow:hidden;}
+    </style>
+    <script src="http://localhost:8081/resource/jquery/jquery.min.js"></script>
+    <script src="http://localhost:8081/resource/jquery/jquery.ui.widget.js"></script>
+    <script src="http://localhost:8081/resource/jquery/jquery.iframe-transport.js"></script>
+    <script src="http://localhost:8081/resource/jquery/jquery.fileupload.js"></script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<%=htmlWebpackPlugin.options.commonjs%>
+</html>
