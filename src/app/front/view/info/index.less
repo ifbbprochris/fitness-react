@@ -1,0 +1,21 @@
+@import "../../../../style/theme";
+.view{
+  width:100%;
+  height:100%;
+  overflow: auto;
+
+  .title{
+    text-align: center;
+    margin:40% 0 0;
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  .regist{
+    text-align: right;
+  }
+  &.not-info{
+    :global(.anticon-left):before{display: none}
+  }
+
+}

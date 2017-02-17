@@ -1,0 +1,65 @@
+//back
+@mainBack:rgba(66,163,156,1);
+@secondBack:rgba(66,163,156,.7);
+@navBack:-webkit-gradient(linear, 0% 0%, 100% 20%,from(#076b7a), to(#5cbaaa));
+@whiteBack:white;
+@normalBack:#f5f6fa;
+@maskBack:rgba(0,0,0,.7);
+
+//color
+@whiteColor:white;
+@mainColor:rgba(66,163,156,1);
+@secondColor:rgba(66,163,156,.7);
+@textColor:#4a4a4a;
+@textSecondColor:#9b9b9b;
+@disabledColor:#ddd;
+
+//font
+@largeFont:30px;
+@moreFont:20px;
+@normalFont:18px;
+@lessFont:16px;
+@smallFont:14px;
+
+//margin&padding
+@largeSpace:80px;
+@moreSpace:40px;
+@normalSpace:20px;
+@lessSpace:10px;
+@smallSpace:5px;
+
+//width&height%lineHeight
+@contentWidth:900px;
+@contentHeight:500px;
+@largeSize:80px;
+@moreSize:60px;
+@normalSize:40px;
+@lessSize:20px;
+@smallSize:10px;
+
+//borderRadius
+@moreRadius:4px;
+@normalRadius:2px;
+
+//border
+@borderSize:1px;
+@borderColor:#d9d9d9;
+
+//box-shadow
+@smallShadow:rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+@lessShadow:rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;;
+@normalShadow:rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;;
+@moreShadow:rgba(0, 0, 0, 0.247059) 0px 14px 45px, rgba(0, 0, 0, 0.219608) 0px 10px 18px;;
+@largeShadow:rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;;
+
+
+//function
+.radius(@size){
+  border-radius:@size;
+}
+.animate(@name:all,@duration:400ms){
+  transition:@name @duration cubic-bezier(0.23, 1, 0.32, 1);
+}
+.shadow(@size){
+  box-shadow:@size;
+}

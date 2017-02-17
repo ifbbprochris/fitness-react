@@ -1,0 +1,10 @@
+.view {
+  width: 100%;
+  position: absolute;
+  top: 92px;
+  bottom: 100px;
+  overflow: auto;
+}
+.view.no-nav {
+  top: 0;
+}
