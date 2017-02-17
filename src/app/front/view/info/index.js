@@ -93,10 +93,10 @@ export default class Info extends ImeComponent{
                     <Picker
                         title="选择性别"
                         cols={1}
-                        data={[{value:'2',label:'女'},{value:'1',label:'男'}]}
-                        value={gender==2?gender:1}
+                        data={[{value:1,label:'男'},{value:2,label:'女'}]}
+                        value={gender==1?[gender]:[2]}
                         onChange={(value)=>{
-                            this.state.user_info.gender=value[0];
+                            this.state.user_info.gender=value;
                             this.forceUpdate();
                         }}
                     >
